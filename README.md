@@ -95,4 +95,3 @@ Links
 * https://www.virtualbox.org/
 * http://www.vagrantbox.es/
 * http://jekyllrb.com/
-* https://github.com/opscode-cookbooks/apt
