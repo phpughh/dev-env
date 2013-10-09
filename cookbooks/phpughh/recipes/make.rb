@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: phpughh
-# Recipe:: default
+# Recipe:: make
 #
 # Copyright 2012-2013, phpughh
 #
@@ -17,8 +17,11 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
-
-include_recipe "phpughh::make"
-include_recipe "phpughh::jekyll"
-include_recipe "phpughh::less"
+#
+# Install build management "make"
+#
+execute "install build management 'make'" do
+  command "apt-get -y install make"
+  user "root"
+  action :run
+end

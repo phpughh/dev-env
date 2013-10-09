@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: phpughh
-# Recipe:: default
+# Recipe:: less
 #
 # Copyright 2012-2013, phpughh
 #
@@ -17,8 +17,11 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
-
-include_recipe "phpughh::make"
-include_recipe "phpughh::jekyll"
-include_recipe "phpughh::less"
+#
+# install package "node-less"
+#
+execute "install node-less package" do
+  command "apt-get -y install node-less"
+  user "root"
+  action :run
+end

@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: phpughh
-# Recipe:: default
+# Attributes:: less
 #
 # Copyright 2012-2013, phpughh
 #
@@ -17,8 +17,5 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
-
-include_recipe "phpughh::make"
-include_recipe "phpughh::jekyll"
-include_recipe "phpughh::less"
+default['phpughh']['package_name']     = 'ruby1.9.1'
+default['phpughh']['package_name_dev'] = 'ruby1.9.1-dev'
