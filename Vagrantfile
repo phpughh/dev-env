@@ -40,7 +40,7 @@ Vagrant::Config.run do |config|
   config.vm.share_folder("aptarchives","/var/cache/apt/archives/","aptcache")
 
   # mount repository "phpughh.github.com"
-  config.vm.share_folder("phpughh.github.com","/var/www/phpughh.github.com","../phpughh.github.com", :extra => "uid=33")
+  config.vm.share_folder("phpughh.github.com","/var/www/phpughh.github.com","../phpughh.github.com", :mount_options => ["uid=33"])
 
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
