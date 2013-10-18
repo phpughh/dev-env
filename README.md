@@ -61,7 +61,7 @@ Start the Jekyll:
 ------------------------------------------------------------------
 Execute the following command:
 ```
-sudo jekyll serve --port 80 --watch --detach --source /var/www/phpughh.github.com
+sudo LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 jekyll serve --port 80 --watch --detach --source /var/www/phpughh.github.com
 ```
 The page is now be available in your browser under "127.0.0.1:8080".
 
