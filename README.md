@@ -5,7 +5,7 @@ Software to download:
 ------------------------------------------------------------------
 **Windows:**
 * VirtualBox - https://www.virtualbox.org/wiki/Downloads
-* Vagrant - http://downloads.vagrantup.com/
+* Vagrant - http://downloads.vagrantup.com/ (Vagrantfile is modified for 1.3.x)
 * Putty - http://www.putty.org
 
 **Linux:**<br>
@@ -49,7 +49,7 @@ Configure a SSH connection in Putty:
 After the connect is established you need to enter user name and password:
 * user: vagrant
 * pass: vagrant
-***
+
 **Linux:**<br/>
 Open a console and execute
 ```
